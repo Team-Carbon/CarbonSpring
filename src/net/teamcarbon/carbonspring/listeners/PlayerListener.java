@@ -112,7 +112,7 @@ public class PlayerListener implements Listener {
 				Material bm = b.getRelative(0, -1, 0).getType();
 				CarbonSpring.setPendingDamage(p, d);
 				SpringTriggerEvent jpte = new SpringTriggerEvent(p, pt, bm, b.getLocation(), v);
-				CarbonSpring.pm.callEvent(jpte);
+				CarbonSpring.pm().callEvent(jpte);
 			}
 		}
 	}
@@ -122,7 +122,7 @@ public class PlayerListener implements Listener {
 		if (((Entity)e.getPlayer()).isOnGround() && CarbonSpring.isLaunched(e.getPlayer())) {
 			double dmg = CarbonSpring.getPendingDmg(e.getPlayer());
 			SpringLandEvent jple = new SpringLandEvent(e.getPlayer(), e.getTo(), dmg);
-			CarbonSpring.pm.callEvent(jple);
+			CarbonSpring.pm().callEvent(jple);
 		}
 	}
 
