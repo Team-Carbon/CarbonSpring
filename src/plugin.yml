@@ -1,0 +1,31 @@
+name: CarbonSpring
+author: OffLuffy
+description: Jump pads for Team-Carbon
+version: 0.1
+main: net.teamcarbon.carbonspring.CarbonSpring
+commands:
+  carbonspringreload:
+    description: Reloads config values
+    usage: /csreload
+    aliases: [csreload, springreload, csr]
+permission:
+  carbonspring.use.plate.*:
+    description: Use any plate type
+    default: op
+    children:
+      carbonspring.use.plate.stone: true
+      carbonspring.use.plate.wood: true
+      carbonspring.use.plate.iron: true
+      carbonspring.use.plate.gold: true
+  carbonspring.use.base.*:
+    description: Use any base type
+    default: op
+  carbonspring.use.perm.*:
+    description: Access to any jump plates using custom a permission
+    default: op
+  carbonspring.nofalldamage:
+    description: Bypass the fall damage give from jump plate landing
+    default: op
+  carbonspring.signcreate:
+    description: Access to create jump plate signs
+    default: op

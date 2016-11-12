@@ -1,0 +1,11 @@
+enable-debug-messages: false
+require-three-by-three: false
+require-sign: true
+base-blocks:
+- REDSTONE_BLOCK
+- REDSTONE_LAMP_OFF
+enabled-plates:
+  stone: true
+  wood: true
+  gold: true
+  iron: true
