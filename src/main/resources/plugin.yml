@@ -1,7 +1,7 @@
 name: CarbonSpring
 author: OffLuffy
-description: Jump pads for Team-Carbon
-version: 0.1
+description: HiveMC-esque jump plates
+version: 1.0.0
 main: net.teamcarbon.carbonspring.CarbonSpring
 commands:
   carbonspringreload:
@@ -28,4 +28,13 @@ permission:
     default: op
   carbonspring.signcreate:
     description: Access to create jump plate signs
+    default: op
+  carbonspring.createsign.power:
+    description: Access to create jump plate signs with a power setting
+    default: op
+  carbonspring.createsign.damage:
+    description: Access to create jump plate signs with a damage setting
+    default: op
+  carbonspring.createsign.perm:
+    description: Access to create jump plate signs with a custom permission setting
     default: op
