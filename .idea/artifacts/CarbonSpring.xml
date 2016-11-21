@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CarbonSpring">
+    <output-path>S:/Minecraft Files/Compiled Plugins</output-path>
+    <root id="archive" name="CarbonSpring.jar">
+      <element id="module-output" name="CarbonSpring" />
+    </root>
+  </artifact>
+</component>
